@@ -26,6 +26,13 @@
     <title>Produit: <?= $don['nom'] ?></title>
 </head>
 <body>
+    <?php
+        if(empty($don['image'])){
+            echo "pas d'image";
+        }else{
+            echo "<img id='test' src='images/".$don['image']."'>";
+        }
+    ?>
     <h1><?= $don['nom'] ?></h1>
     <h2>Prix: <?= $don['prix'] ?>€</h2>
     <div><?= nl2br($don['description']) ?></div>
