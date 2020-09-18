@@ -14,7 +14,7 @@
 </head>
 <body>
     <h1>Ajouter un produit</h1>
-    <form action="treatmentAddProduct.php" method="POST">
+    <form action="treatmentAddProduct.php" method="POST" enctype="multipart/form-data">
         <div>
             <label for="nom">Nom: </label>
             <input type="text" name="nom" id="nom" value="">
@@ -26,6 +26,10 @@
         <div>
             <label for="description">Description: </label>
             <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="image">Image: </label>
+            <input type="file" name="image" id="image">
         </div>
         <div>
             <input type="submit" value="Ajouter">
