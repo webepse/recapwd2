@@ -15,6 +15,7 @@
 </head>
 <body>
     <h1>Administration des produits</h1>
+    <a href="addProduct.php">Ajouter un produit</a>
     <table border="1">
         <tr>
             <th>id</th>
