@@ -32,8 +32,8 @@
                     echo "<td>".$don['nom']."</td>";
                     echo "<td>".$don['prix']."€</td>";
                     echo "<td>";
-                        echo "<a href=''>Modifier</a>";
-                        echo "<a href=''>Supprimer</a>";
+                        echo "<a href='updateProduct.php?id=".$don['id']."'>Modifier</a>";
+                        echo "<a href='deleteProduct.php?id=".$don['id']."'>Supprimer</a>";
                     echo "</td>";
                 echo "</tr>";
             }
