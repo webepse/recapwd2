@@ -1,5 +1,6 @@
 <?php
     header("HTTP/1.0 404 Not Found");
+    // permet d'indiquer le code 404 (voir dans onglet réseau)
 ?>
 
 <!DOCTYPE html>

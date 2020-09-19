@@ -1,5 +1,6 @@
 <?php
     header("HTTP/1.0 403 Forbidden");
+    // permet d'indiquer le code 403 (voir dans onglet réseau) - accès interdit 
 ?>
 
 <!DOCTYPE html>

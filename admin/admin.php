@@ -1,12 +1,15 @@
 <?php
     session_start();
+     // sécurité 
+    // tester si session sinon redirection
     if(!isset($_SESSION['login'])){
         header("LOCATION:403.php");
     }
 
+     // si get deco
     if(isset($_GET['deco'])){
-        session_destroy();
-        header("LOCATION:index.php");
+        session_destroy(); // destruction de la session (attention elle reste dans le cache)
+        header("LOCATION:index.php"); // renvoyer sur la page index
     }
 
 ?>
