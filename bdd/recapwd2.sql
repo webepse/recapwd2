@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  sam. 19 sep. 2020 à 08:46
+-- Généré le :  sam. 19 sep. 2020 à 08:49
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.3.5
 
@@ -60,13 +60,6 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `description` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `articles`
---
-
-INSERT INTO `articles` (`id`, `nom`, `prix`, `image`, `description`) VALUES
-(3, 'test', '12.00', '1229201325batman-logo-png-picture-6.png', 'test');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
