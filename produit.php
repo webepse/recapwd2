@@ -30,6 +30,7 @@
 </head>
 <body>
     <?php
+        //die(var_dump($don));
         // gestion de l'image 
         if(empty($don['image'])){ // si le champ est vide
             echo "pas d'image";

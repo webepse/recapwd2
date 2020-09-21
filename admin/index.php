@@ -1,5 +1,11 @@
 <?php
     session_start();
+
+    // gestion du problème de reconnexion sans destruction de la session
+    if(isset($_SESSION['login'])){
+        header("LOCATION:admin.php");
+    }
+
     // obligé d'avoir cette fonction quand on veut travailler avec les sessions
     // initialisation de la variable error
     $error="";

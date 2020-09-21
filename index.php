@@ -23,7 +23,9 @@
              // echo pour afficher - 2 types de valeur : string (chaîne de caractères) et variable php ($)
              // technique: on écrit la chaine de KK en une fois et ensuite on découpe en faisant attention au délimiteur utilisé (simple quote ou double quote)
              // echo "<div><a href='produit.php?id='></a></div>";
-             echo "<div><a href='produit.php?id=".$don['id']."'>".$don['nom']."</a></div>";
+    ?>         
+             <div><a href='produit.php?id=<?=$don['id']?>'><?=$don['nom']?></a></div>
+    <?php         
          }
          $req->closeCursor();
          // facultatif avec mysql - ferme la connexion et vide le contenu de la variable $req (attention pas $don)
