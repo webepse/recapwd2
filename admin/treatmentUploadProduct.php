@@ -59,7 +59,8 @@
                 $donImg=$reqImg->fetch();
 
                 if(!empty($donImg['image'])){
-                    unlink("../images/".$donImg['image']); // unlink supprimer un fichier 
+                    unlink("../images/".$donImg['image']); // unlink supprimer un fichier  
+                    unlink("../images/mini_".$donImg['image']); // unlink supprimer un fichier  
                 }
 
                 //traitement du fichier
@@ -101,7 +102,11 @@
                             ":myid"=>$id
                         ]);
                         $upload->closeCursor();
-                        header("LOCATION:articles.php?update=success");
+                        if($extension==".png"){
+                            header("LOCATION:redimpng.php?image=".$fichiercptl);
+                        }else{
+                            header("LOCATION:redim.php?image=".$fichiercptl);
+                        }
                             
                     }
                     else 

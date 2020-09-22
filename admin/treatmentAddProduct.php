@@ -82,7 +82,13 @@
                             ":descri"=>$description
                         ]);
                         $insert->closeCursor();
-                        header("LOCATION:articles.php?insert=success");
+                        
+                        if($extension==".png"){
+                            header("LOCATION:redimpng.php?image=".$fichiercptl);
+                        }else{
+                            header("LOCATION:redim.php?image=".$fichiercptl);
+                        }
+                        
                             
                     }
                     else //Sinon (la fonction retourne FALSE).

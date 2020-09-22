@@ -28,6 +28,7 @@
         // suppresion de l'image si l'entrée en possède une
         if(!empty($don['image'])){
             unlink("../images/".$don['image']);
+            unlink("../images/mini_".$don['image']);
         }
         // suppresion de l'entrée dans la base de données
         $delete=$bdd->prepare("DELETE FROM articles WHERE id=?");

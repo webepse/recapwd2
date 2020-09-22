@@ -35,7 +35,7 @@
         if(empty($don['image'])){ // si le champ est vide
             echo "pas d'image";
         }else{ // si le champ n'est pas vide
-            echo "<img id='test' src='images/".$don['image']."'>";
+            echo "<img id='test' src='images/mini_".$don['image']."'>";
         }
     ?>
     
