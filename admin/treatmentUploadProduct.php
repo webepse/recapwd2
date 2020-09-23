@@ -129,7 +129,7 @@
 
 
     }else{
-        header("LOCATION:uploadProduct.php?id=".$id);
+        header("LOCATION:updateProduct.php?id=".$id);
     }
 
 
