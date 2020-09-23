@@ -31,5 +31,15 @@
          // facultatif avec mysql - ferme la connexion et vide le contenu de la variable $req (attention pas $don)
         
     ?>
+    <form action="search.php" method="GET">
+         <div>
+            <label for="search">Rechercher: </label>
+            <input type="text" id="search" name="search">
+         </div>
+         <div>
+            <input type="submit" value="Rechercher">
+         </div>
+    </form>
+
 </body>
 </html>
