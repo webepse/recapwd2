@@ -111,18 +111,18 @@
                     }
                     else 
                     {
-                        header("LOCATION:uploadProduct.php?id=".$id."&error=1&upload=echec");
+                        header("LOCATION:updateProduct.php?id=".$id."&error=1&upload=echec");
                     }
                 }
                 else
                 {
-                    header("LOCATION:uploadProduct.php?id=".$id."&error=1&fich=".$erreur);
+                    header("LOCATION:updateProduct.php?id=".$id."&error=1&fich=".$erreur);
                 }	
 
 
             }
         }else{
-            header("LOCATION:uploadProduct.php?id=".$id."&err=".$err);
+            header("LOCATION:updateProduct.php?id=".$id."&err=".$err);
         }
 
 
