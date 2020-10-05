@@ -24,7 +24,7 @@
              // technique: on écrit la chaine de KK en une fois et ensuite on découpe en faisant attention au délimiteur utilisé (simple quote ou double quote)
              // echo "<div><a href='produit.php?id='></a></div>";
     ?>         
-             <div><a href='produit.php?id=<?=$don['id']?>'><?=$don['nom']?></a></div>
+             <div><a href='produit-<?=$don['id']?>'><?=$don['nom']?></a></div>
     <?php         
          }
          $req->closeCursor();

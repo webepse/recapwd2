@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine On
+#pour les alias
+RewriteBase /PHP/EPSEPHP/recapwd2/
+RewriteRule ^produit-([0-9]+)$ produit.php?id=$1 [L] 
